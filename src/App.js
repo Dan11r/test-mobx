@@ -9,10 +9,6 @@ const App = observer(() => {
   React.useEffect(() => {
     courses.setLatestRateData()
   }, [])
-  React.useEffect(() => {
-    console.log(courses.rateData)
-  }, [courses.rateData])
-  console.log(courses.popUp.isOpen)
 
   return (
     <div className="App">
